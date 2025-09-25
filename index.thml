@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anna Ruvolo Fashion Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* RESET */
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Roboto', sans-serif; color:#000; line-height:1.6; background:#fff;}
+    a {text-decoration:none; color:inherit;}
+
+    /* NAVBAR */
+    nav {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:1rem 2rem; background:#fff; border-bottom:1px solid #eee;
+      position:sticky; top:0; z-index:1000;
+    }
+    nav .logo {font-family:'Playfair Display', serif; font-size:1.8rem; font-weight:700; color:#000;}
+    nav ul {display:flex; gap:1.5rem; list-style:none;}
+    nav ul li a {font-weight:500; transition:color 0.3s;}
+    nav ul li a:hover {color:#c9b89b;} /* crema */
+
+    /* HERO */
+    .hero {
+      height:90vh; background:url('https://source.unsplash.com/1600x900/?fashion,designer') center/cover no-repeat;
+      display:flex; justify-content:center; align-items:center;
+      color:#fff; text-align:center; flex-direction:column;
+    }
+    .hero h1 {font-family:'Playfair Display', serif; font-size:3rem; margin-bottom:1rem;}
+    .hero p {font-size:1.2rem; max-width:600px;}
+
+    /* SECTIONS */
+    section {padding:4rem 2rem;}
+    h2 {font-family:'Playfair Display', serif; font-size:2rem; margin-bottom:2rem; text-align:center; color:#000;}
+
+    /* ABOUT */
+    #about p {max-width:800px; margin:0 auto; text-align:center; color:#333;}
+
+    /* PORTFOLIO */
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:1rem;}
+    .gallery img {width:100%; height:100%; object-fit:cover; border-radius:8px; transition: transform 0.3s;}
+    .gallery img:hover {transform:scale(1.05);}
+
+    /* PREVENTIVO */
+    #preventivo {color:#fff; background:url('https://source.unsplash.com/1600x900/?dress') center/cover no-repeat; background-size:cover;}
+    .preventivo-form {max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:1rem; background:rgba(0,0,0,0.5); padding:2rem; border-radius:10px;}
+    .preventivo-form input, .preventivo-form textarea {padding:0.8rem; border:none; border-radius:5px; width:100%;}
+    .preventivo-form button {padding:0.8rem; border:none; background:#c9b89b; color:#000; font-weight:600; cursor:pointer; transition:background 0.3s;}
+    .preventivo-form button:hover {background:#bfa67a;}
+
+    /* FOOTER */
+    footer {text-align:center; padding:2rem; background:#f8f8f8; color:#777;}
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Anna Ruvolo</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#preventivo">Preventivo</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Anna Ruvolo</h1>
+    <p>Fashion Designer | Eleganza, Creatività e Stile Unico</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>Chi Sono</h2>
+    <p>Sono Anna Ruvolo, fashion designer con la passione per la sartoria su misura e le collezioni esclusive. Creo capi unici che esprimono eleganza e personalità.</p>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <!-- Placeholder immagini 30 -->
+      <img src="https://source.unsplash.com/400x600/?fashion,dress1" alt="Portfolio 1">
+      <img src="https://source.unsplash.com/401x600/?fashion,dress2" alt="Portfolio 2">
+      <img src="https://source.unsplash.com/402x600/?fashion,dress3" alt="Portfolio 3">
+      <img src="https://source.unsplash.com/403x600/?fashion,dress4" alt="Portfolio 4">
+      <img src="https://source.unsplash.com/404x600/?fashion,dress5" alt="Portfolio 5">
+      <img src="https://source.unsplash.com/405x600/?fashion,dress6" alt="Portfolio 6">
+      <img src="https://source.unsplash.com/406x600/?fashion,dress7" alt="Portfolio 7">
+      <img src="https://source.unsplash.com/407x600/?fashion,dress8" alt="Portfolio 8">
+      <img src="https://source.unsplash.com/408x600/?fashion,dress9" alt="Portfolio 9">
+      <img src="https://source.unsplash.com/409x600/?fashion,dress10" alt="Portfolio 10">
+      <img src="https://source.unsplash.com/410x600/?fashion,dress11" alt="Portfolio 11">
+      <img src="https://source.unsplash.com/411x600/?fashion,dress12" alt="Portfolio 12">
+      <img src="https://source.unsplash.com/412x600/?fashion,dress13" alt="Portfolio 13">
+      <img src="https://source.unsplash.com/413x600/?fashion,dress14" alt="Portfolio 14">
+      <img src="https://source.unsplash.com/414x600/?fashion,dress15" alt="Portfolio 15">
+      <img src="https://source.unsplash.com/415x600/?fashion,dress16" alt="Portfolio 16">
+      <img src="https://source.unsplash.com/416x600/?fashion,dress17" alt="Portfolio 17">
+      <img src="https://source.unsplash.com/417x600/?fashion,dress18" alt="Portfolio 18">
+      <img src="https://source.unsplash.com/418x600/?fashion,dress19" alt="Portfolio 19">
+      <img src="https://source.unsplash.com/419x600/?fashion,dress20" alt="Portfolio 20">
+      <img src="https://source.unsplash.com/420x600/?fashion,dress21" alt="Portfolio 21">
+      <img src="https://source.unsplash.com/421x600/?fashion,dress22" alt="Portfolio 22">
+      <img src="https://source.unsplash.com/422x600/?fashion,dress23" alt="Portfolio 23">
+      <img src="https://source.unsplash.com/423x600/?fashion,dress24" alt="Portfolio 24">
+      <img src="https://source.unsplash.com/424x600/?fashion,dress25" alt="Portfolio 25">
+      <img src="https://source.unsplash.com/425x600/?fashion,dress26" alt="Portfolio 26">
+      <img src="https://source.unsplash.com/426x600/?fashion,dress27" alt="Portfolio 27">
+      <img src="https://source.unsplash.com/427x600/?fashion,dress28" alt="Portfolio 28">
+      <img src="https://source.unsplash.com/428x600/?fashion,dress29" alt="Portfolio 29">
+      <img src="https://source.unsplash.com/429x600/?fashion,dress30" alt="Portfolio 30">
+    </div>
+  </section>
+
+  <!-- PREVENTIVO -->
+  <section id="preventivo">
+    <h2>Richiedi un Preventivo</h2>
+    <form class="preventivo-form">
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Tipo di capo o servizio" required>
+      <textarea placeholder="Descrivi la tua richiesta" rows="5" required></textarea>
+      <button type="submit">Invia Richiesta</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Anna Ruvolo Fashion Designer | Tutti i diritti riservati
+  </footer>
+</body>
+</html>
+<!-- SHOP / CORSI -->
+<section id="shop">
+  <h2>Acquista Prodotti e Corsi</h2>
+  <div class="shop-items">
+    <!-- Esempio prodotto fisico -->
+    <div class="shop-item">
+      <img src="https://source.unsplash.com/400x600/?dress" alt="Abito Elegante">
+      <h3>Abito Elegante</h3>
+      <p>Descrizione breve del capo.</p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="TUO_ID_PAYPAL">
+        <button type="submit">Compra Ora</button>
+      </form>
+    </div>
+
+    <!-- Esempio corso online -->
+    <div class="shop-item">
+      <img src="https://source.unsplash.com/401x600/?sewing" alt="Corso Cucito">
+      <h3>Corso di Cucito Base</h3>
+      <p>Accedi subito al corso online dopo il pagamento.</p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="TUO_ID_PAYPAL_CORSO">
+        <button type="submit">Compra Ora</button>
+      </form>
+    </div>
+  </div>
+</section>
+/* SHOP / CORSI */
+.shop-items {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:2rem; padding:0 2rem;}
+.shop-item {background:#fff; padding:1rem; border-radius:10px; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+.shop-item img {width:100%; height:300px; object-fit:cover; border-radius:8px;}
+.shop-item h3 {margin:1rem 0 0.5rem; font-family:'Playfair Display', serif;}
+.shop-item p {margin-bottom:1rem; color:#555;}
+.shop-item button {padding:0.6rem 1.2rem; border:none; background:#c9b89b; color:#000; font-weight:600; cursor:pointer; border-radius:5px; transition:background 0.3s;}
+.shop-item button:hover {background:#bfa67a;}
