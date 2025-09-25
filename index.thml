@@ -50,6 +50,15 @@
     .preventivo-form button {padding:0.8rem; border:none; background:#c9b89b; color:#000; font-weight:600; cursor:pointer; transition:background 0.3s;}
     .preventivo-form button:hover {background:#bfa67a;}
 
+    /* SHOP / CORSI */
+    .shop-items {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:2rem; padding:0 2rem;}
+    .shop-item {background:#fff; padding:1rem; border-radius:10px; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+    .shop-item img {width:100%; height:300px; object-fit:cover; border-radius:8px;}
+    .shop-item h3 {margin:1rem 0 0.5rem; font-family:'Playfair Display', serif;}
+    .shop-item p {margin-bottom:1rem; color:#555;}
+    .shop-item button {padding:0.6rem 1.2rem; border:none; background:#c9b89b; color:#000; font-weight:600; cursor:pointer; border-radius:5px; transition:background 0.3s;}
+    .shop-item button:hover {background:#bfa67a;}
+
     /* FOOTER */
     footer {text-align:center; padding:2rem; background:#f8f8f8; color:#777;}
   </style>
@@ -63,6 +72,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#preventivo">Preventivo</a></li>
+      <li><a href="#shop">Shop/Corsi</a></li>
     </ul>
   </nav>
 
@@ -128,46 +138,38 @@
     </form>
   </section>
 
+  <!-- SHOP / CORSI -->
+  <section id="shop">
+    <h2>Acquista Prodotti e Corsi</h2>
+    <div class="shop-items">
+      <!-- Esempio prodotto fisico -->
+      <div class="shop-item">
+        <img src="https://source.unsplash.com/400x600/?dress" alt="Abito Elegante">
+        <h3>Abito Elegante</h3>
+        <p>Descrizione breve del capo.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="TUO_ID_PAYPAL">
+          <button type="submit">Compra Ora</button>
+        </form>
+      </div>
+      <!-- Esempio corso online -->
+      <div class="shop-item">
+        <img src="https://source.unsplash.com/401x600/?sewing" alt="Corso Cucito">
+        <h3>Corso di Cucito Base</h3>
+        <p>Accedi subito al corso online dopo il pagamento.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="TUO_ID_PAYPAL_CORSO">
+          <button type="submit">Compra Ora</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     &copy; 2025 Anna Ruvolo Fashion Designer | Tutti i diritti riservati
   </footer>
 </body>
 </html>
-<!-- SHOP / CORSI -->
-<section id="shop">
-  <h2>Acquista Prodotti e Corsi</h2>
-  <div class="shop-items">
-    <!-- Esempio prodotto fisico -->
-    <div class="shop-item">
-      <img src="https://source.unsplash.com/400x600/?dress" alt="Abito Elegante">
-      <h3>Abito Elegante</h3>
-      <p>Descrizione breve del capo.</p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="TUO_ID_PAYPAL">
-        <button type="submit">Compra Ora</button>
-      </form>
-    </div>
-
-    <!-- Esempio corso online -->
-    <div class="shop-item">
-      <img src="https://source.unsplash.com/401x600/?sewing" alt="Corso Cucito">
-      <h3>Corso di Cucito Base</h3>
-      <p>Accedi subito al corso online dopo il pagamento.</p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="TUO_ID_PAYPAL_CORSO">
-        <button type="submit">Compra Ora</button>
-      </form>
-    </div>
-  </div>
-</section>
-/* SHOP / CORSI */
-.shop-items {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:2rem; padding:0 2rem;}
-.shop-item {background:#fff; padding:1rem; border-radius:10px; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
-.shop-item img {width:100%; height:300px; object-fit:cover; border-radius:8px;}
-.shop-item h3 {margin:1rem 0 0.5rem; font-family:'Playfair Display', serif;}
-.shop-item p {margin-bottom:1rem; color:#555;}
-.shop-item button {padding:0.6rem 1.2rem; border:none; background:#c9b89b; color:#000; font-weight:600; cursor:pointer; border-radius:5px; transition:background 0.3s;}
-.shop-item button:hover {background:#bfa67a;}
